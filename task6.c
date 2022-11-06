@@ -88,6 +88,9 @@ int main(void)
 
     char *hsh = "7aff86b0dffe670fde09f3bd30c1defb2fcb5fd06e031d2577078a1e68b88db1";
     //Task 6
-    int sig = verifySignature2(big_signature, bige, big_new_n, hsh, ctx); 
+    //prints the unpadded signature which can then be passed into the ASN1 decoder
+    verifySignature2(big_signature, bige, big_new_n, hsh, ctx);
+    //print the hsh and see if the decoder output matches it
+    printf("Hash: %s \n", hsh);
     
 }

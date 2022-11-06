@@ -33,6 +33,7 @@ int verifySignature(BIGNUM * signature, BIGNUM* e, BIGNUM * n , BIGNUM * msg, BN
     return(BN_cmp(verif_sig, message_mod_n));
 }
 
+
 BIGNUM *findN(BIGNUM *p, BIGNUM *q, BN_CTX *ctx)
 {
     BIGNUM *res = BN_new();
