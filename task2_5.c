@@ -109,11 +109,11 @@ int main(void)
     char *msg2 = "Decrypted Hex: ";
     printBN(msg2, decryptedHex);
     //Task 4
-    BIGNUM *encryptedSig = encrypt(bigSig_message, bige, bign, ctx);
+    BIGNUM *encryptedSig = encrypt(bigSig_message, bigd, bign, ctx);
     char *msg3 = "Digital Signature: ";
     printBN(msg3, encryptedSig);
 
-    BIGNUM *alteredSig = encrypt(big_dif_sig, bige, bign, ctx);
+    BIGNUM *alteredSig = encrypt(big_dif_sig, bigd, bign, ctx);
     char *msg4 = "Altered Signature: ";
     printBN(msg4, alteredSig);
     //Task 5
